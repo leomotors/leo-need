@@ -2,31 +2,68 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="🧱 จ่ายตัง Leo ยัง?" description="Leo จะโดนเกียนหรือไม่ ❓">
+<Layout title="brikl จ่ายตัง Leo ยัง?" description="Leo จะโดนเกียนหรือไม่ ❓">
   <main class="py-16 flex flex-col items-center gap-16">
     <h1 class="text-4xl sm:text-6xl font-extrabold">brikl จ่ายตัง Leo ยัง?</h1>
 
     <p>
-      <span class="line-through">อัพเดทล่าสุด 16 พ.ย. 66</span>
+      <span class="line-through">อัพเดทล่าสุด 30 พ.ย. 66</span>
       <span>
         (ขี้เกียจอัพเดททุกวันละ เดี๋ยวเงินเข้าเมื่อไหร่ มาแก้
-        ถ้าเห็นข้อความนี้อยู่ แปลว่าแม่งยังไม่จ่ายตังกู)
+        ถ้าเห็นข้อความนี้อยู่ แปลว่ายังไม่ได้จ่าย)
       </span>
     </p>
 
-    <p class="text-2xl font-medium">
-      งวดที่ 1 (สิ้นเดือนตุลา):
-      <span class="text-red-500">ยัง</span>
-    </p>
+    <section class="[&>p]:text-2xl [&>p]:font-medium">
+      <p>
+        <span>งวดที่ 1 (สิ้นเดือนตุลา):</span>
+        <span class="text-red-500">ยัง</span>
+      </p>
+      <p>
+        <span>งวดที่ 2 (สิ้นเดือนพฤศจิ):</span>
+        <span class="text-red-500">ยัง</span>
+      </p>
+    </section>
 
     <img src="/gean.webp" alt="โดนเกียน" />
 
-    <footer class="text-md sm:text-3xl">
+    <section class="text-md sm:text-3xl">
       <img src="/leo-need.svg" class="h-12 inline" alt="Leo/need" />
       {" "}
       <span class="line-through">more bullets</span>
       {" "}
       <span>money มาก ๆ จ่ายด้วย</span>
-    </footer>
+    </section>
+
+    <h2 class="font-bold text-4xl">Hall of Fame</h2>
+
+    <div class="scrolling-emojis">
+      <p>💛🇭🇷💛🇭🇷💛🇭🇷💛🇭🇷💛🇭🇷💛🇭🇷💛🇭🇷💛🇭🇷💛🇭🇷 🍷</p>
+    </div>
+
+    <section class="flex flex-col gap-2 items-center">
+      <img src="./golden_frame.webp" class="max-w-xs" />
+      <p>Not brikl's CEO เดี๋ยวโดนฟ้อง</p>
+    </section>
   </main>
 </Layout>
+
+<style>
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scrolling-emojis {
+    overflow: hidden;
+    height: 1.5em;
+  }
+
+  .scrolling-emojis p {
+    animation: scroll 5s linear infinite;
+  }
+</style>
