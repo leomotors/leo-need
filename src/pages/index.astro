@@ -3,61 +3,84 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="brikl จ่ายตัง Leo ยัง?" description="Leo จะโดนเกียนหรือไม่ ❓">
-  <main class="py-16 flex flex-col items-center gap-16">
-    <h1 class="text-4xl sm:text-6xl font-extrabold">brikl จ่ายตัง Leo ยัง?</h1>
+  <main class="p-16 prose prose-2xl mx-auto">
+    <h1 class="text-center">brikl จ่ายตัง Leo ยัง?</h1>
 
-    <p class="text-2xl font-medium flex items-center mx-4">
-      <span>ค่าชดเชยเลิกจ้างที่ควรจ่ายตั้งแต่สิ้นเดือนกันยายน:&nbsp;</span>
-      <span class="text-red-500">ผิดนัด</span>
+    <p class="text-2xl mt-8">
+      <span>สิ้นเดือนกันยายน:&nbsp;</span>
+      <span class="text-red-500">Layoff ปิดสาขา แล้วบิดค่าชดเชย (ผิดนัด)</span>
     </p>
 
-    <img src="/gean.webp" alt="โดนเกียน" />
+    <img src="/gean.webp" class="mx-auto" alt="โดนเกียน" />
 
-    <p class="text-3xl font-bold flex items-center mx-4">
-      <span>คำสั่งพนักงานตรวจแรงงาน (ออกเมื่อมกราคม):&nbsp;</span>
-      <span class="text-green-500">สั่งจ่ายแล้ว</span>
-      <img src="honamiparty.webp" class="w-24 h-24" alt="Honami Party" />
+    <p class="text-2xl">
+      <span>พฤศจิกายน:&nbsp;</span>
+      <span>ส่งคำร้องไปที่กรมสวัสดิการและคุ้มครองแรงงาน</span>
     </p>
 
-    <p class="text-2xl font-medium flex items-center mx-4">
-      <span>บริษัทต้องนำเงินมาวางภายในกุมภาพันธ์:&nbsp;</span>
-      <span class="text-red-500">ไม่ปฏิบัติตามคำสั่งพนักงานตรวจแรงงาน</span>
+    <p class="text-3xl font-bold">
+      <span>มกราคม:&nbsp;</span>
+      <span class="text-green-500"
+        >คำสั่งพนักงานตรวจแรงงาน สั่งให้บริษัทจ่าย</span
+      >
+
+      <img
+        src="honamiparty.webp"
+        class="w-24 h-24 mx-auto"
+        alt="Honami Party"
+      />
     </p>
 
-    <p class="text-2xl font-medium flex items-center mx-4">
+    <p class="text-2xl">
+      <span>มีนาคม:&nbsp;</span>
       <span>
-        ฟ้องศาลแรงงานกลาง (คดีแพ่ง) เพื่อบังคับให้ปฏิบัติตามคำสั่ง:&nbsp;
+        บริษัท <span class="text-red-500">
+          ไม่ปฏิบัติตามคำสั่งพนักงานตรวจแรงงาน
+        </span> จึงยื่นฟ้องให้ปฏิบัติตามคำสั่งฯ ที่ศาลแรงงานกลาง
       </span>
-      <span>ยื่นฟ้องแล้วเมื่อเดือนมกราคม</span>
     </p>
 
-    <p class="text-2xl font-medium flex items-center mx-4">
+    <p class="text-2xl">
       <span>
-        พนักงานตรวจแรงงานดำเนิน
-        <span class="underline">คดีอาญา</span>
-        ต่อนายจ้าง:&nbsp;
+        และพนักงานตรวจแรงงาน
+        <span class="font-bold text-red-500">ดำเนินคดีอาญา</span>
+        ต่อกรรมการบริษัท (<a
+          href="https://www.linkedin.com/in/maarten-boone"
+          target="_blank"
+          rel="noreferrer">นายมาร์เทน เอเมียล แอล บูน</a
+        >):&nbsp;
       </span>
       <span>กำลังดำเนินการ?</span>
     </p>
 
-    <p class="text-xl max-w-2xl px-4">
-      <b>พระราชบัญญัติคุ้มครองแรงงาน มาตรา ๑๕๑ วรรคสอง</b>
-      ผู้ใดไม่ปฏิบัติตามคำสั่งของพนักงานตรวจแรงงานที่สั่งตามมาตรา ๑๒๔ ต้องระวางโทษจำคุกไม่เกินหนึ่งปี
-      หรือปรับไม่เกินสองหมื่นบาท หรือทั้งจำทั้งปรับ
+    <blockquote>
+      <p>
+        พระราชบัญญัติคุ้มครองแรงงาน มาตรา ๑๕๑ วรรคสอง
+        ผู้ใดไม่ปฏิบัติตามคำสั่งของพนักงานตรวจแรงงานที่สั่งตามมาตรา ๑๒๔
+        ต้องระวางโทษ<span class="underline">จำคุกไม่เกินหนึ่งปี</span>
+        หรือ<span class="underline">ปรับไม่เกินสองหมื่นบาท</span> หรือ<span
+          class="underline">ทั้งจำทั้งปรับ</span
+        >
+      </p>
+    </blockquote>
+
+    <p class="text-3xl font-bold">
+      <span>พฤษภาคม:&nbsp;</span>
+      <span>
+        ศาลแรงงานกลางพิพากษาให้โจทก์<span class="text-green-500">ชนะคดี</span> (พิพากษาตามคำสั่งพนักงานตรวจแรงงาน)
+      </span>
     </p>
 
-    <section class="text-md sm:text-3xl">
+    <section class="text-md sm:text-3xl text-center">
       <img src="/leo-need.svg" class="h-12 inline" alt="Leo/need" />
-      {" "}
-      <span class="line-through">more bullets</span>
       {" "}
       <span>money มาก ๆ จ่ายด้วย</span>
     </section>
 
-    <h2 class="font-bold text-4xl">Hall of Fame</h2>
+    <h2 class="text-center">Hall of Fame</h2>
 
     <div class="scrolling-emojis">
-      <p>💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷 🍷</p>
+      <div>💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷💛🇨🇷 🍷</div>
     </div>
 
     <section class="flex flex-col gap-2 items-center">
@@ -66,7 +89,7 @@ import Layout from "../layouts/Layout.astro";
   </main>
 </Layout>
 
-<style>
+<style lang="postcss">
   @keyframes scroll {
     0% {
       transform: translateX(100%);
@@ -79,9 +102,10 @@ import Layout from "../layouts/Layout.astro";
   .scrolling-emojis {
     overflow: hidden;
     height: 1.5em;
+    @apply w-full;
   }
 
-  .scrolling-emojis p {
+  .scrolling-emojis div {
     animation: scroll 5s linear infinite;
   }
 </style>
